@@ -1,0 +1,9 @@
+<div id="toc" markdown="1" popover>
+   {{ site.data.ui_translations[page.lang].catalog_link }}
+   {:.center-aligned}
+   <header class="center-aligned">{{ site.data.ui_translations[page.lang].catechism_toc_heading }}</header>
+   {% assign toc_file = "catechismus/" | append: page.lang | append: "/toc.html" %}
+   {% include {{ toc_file }} %}
+</div>
+
+<script type="module" src="{{ '/assets/js/toc.js' | relative_url }}"></script>

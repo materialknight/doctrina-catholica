@@ -1,0 +1,17 @@
+{
+   "name": "Doctrina Catholica",
+   "short_name": "Doctrina Catholica",
+   "description": "El Catecismo enlazado con sus fuentes.",
+   "theme_color": "#e5fafd",
+   "background_color": "#e5fafd",
+   "display": "browser",
+   "orientation": "any",
+   "start_url": "/doctrina-catholica/",
+   "icons": [
+      {
+         "src": "./assets/images/favicon.png",
+         "sizes": "512x512",
+         "type": "image/png"
+      }
+   ]
+}

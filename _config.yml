@@ -1,0 +1,95 @@
+# This file is *NOT* reloaded automatically; if you change it, restart the server (Ctrl + C, bundle exec jekyll serve).
+
+# These settings can be accessed anywhere like this: {{ site.title }}, {{ site.email }}
+# You can create any custom variable you want, and access it like this: {{ site.myvariable }}
+
+title: Doctrina Catholica
+# email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  El Catecismo enlazado con sus fuentes.
+baseurl: "/doctrina-catholica" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username: materialknight
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+#* MY CUSTOMIZATION:
+
+# header_pages:
+#   - about.markdown
+collections:
+  pages:
+    output: true
+    permalink: ":path"
+  opuscula:
+    output: true
+    permalink: ":path"
+  catechismus:
+    output: true
+
+defaults:
+  # All pages have the "page" layout and the "es" lang by default:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      lang: es
+
+  # Setting up the correct lang for every file based on its containing folder:
+  -
+    scope:
+      path: "_*/es"
+    values:
+      lang: "es"
+  -
+    scope:
+      path: "_*/eo"
+    values:
+      lang: "eo"
+  -
+    scope:
+      path: "_*/en"
+    values:
+      lang: "en"
+
+  # Catechismus' permalinks:
+  -
+    scope:
+      path: "_catechismus/en"
+    values:
+      permalink: "en/catechismus/:name"
+  -
+    scope:
+      path: "_catechismus/eo"
+    values:
+      permalink: "eo/catechismus/:name"
+  -
+    scope:
+      path: "_catechismus/es"
+    values:
+      permalink: "es/catechismus/:name"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

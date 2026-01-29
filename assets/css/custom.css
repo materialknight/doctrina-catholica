@@ -1,0 +1,344 @@
+/* FONT STYLES */
+
+p {
+   font-size: 1rem;
+}
+
+blockquote {
+   font-style: normal;
+   letter-spacing: normal;
+   color: #646161;
+}
+
+textarea {
+   font-size: 15px;
+   line-height: 1.3;
+   min-width: 190px;
+   min-height: 110px;
+}
+
+/* Heading styles override */
+
+.post-title {
+   font-size: 40px;
+   font-weight: bold;
+   display: grid;
+   gap: 18px;
+}
+
+.post-content {
+   h2 {
+      font-size: 34px;
+   }
+
+   h3 {
+      font-size: 29px;
+   }
+
+   h4 {
+      font-size: 25px;
+   }
+
+   h5 {
+      font-size: 22px;
+   }
+
+   h6 {
+      font-size: 19px;
+   }
+}
+
+/* UTILITY CLASSES */
+
+.right-aligned {
+   text-align: right;
+}
+
+.center-aligned {
+   text-align: center;
+}
+
+.hemistich {
+   display: block;
+}
+
+.upper-roman {
+   list-style-type: upper-roman;
+   border-left: none
+}
+
+.details-1 {
+   border: 1px solid black;
+   border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 15px;
+
+   summary {
+      text-align: center;
+      background-color: aliceblue;
+      padding: 7px;
+      border-radius: 8px;
+      cursor: pointer;
+      border-bottom: 1px solid black;
+   }
+
+   .details-toc {
+      margin-top: 15px;
+   }
+}
+
+/* POPOVERS */
+
+[popover] {
+   padding: 20px;
+   overflow-y: auto;
+   max-height: 70vh;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
+
+/* BUTTONS */
+
+#btn-container {
+   display: grid;
+   position: fixed;
+   inset: auto 37px 37px auto;
+   grid-auto-flow: column;
+   gap: 10px;
+}
+
+[popovertarget=toc] {
+   /* position: fixed; */
+   /* inset: auto 37px 37px auto; */
+   width: 42px;
+   height: 42px;
+   cursor: pointer;
+   border: 2px solid black;
+   background-color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+[popovertarget=marked-verses] {
+   /* position: fixed; */
+   /* inset: auto 87px 37px auto; */
+   width: 42px;
+   height: 42px;
+   cursor: pointer;
+   border: 2px solid black;
+   background-color: aliceblue;
+   fill: forestgreen;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+[popovertarget=font-options] {
+   /* position: fixed; */
+   /* inset: auto 137px 37px auto; */
+   width: 42px;
+   height: 42px;
+   cursor: pointer;
+   border: 2px solid black;
+   background-color: aliceblue;
+   fill: teal;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+[popovertarget=toc]:active,
+[popovertarget=marked-verses]:active,
+[popovertarget=font-options]:active {
+   background-color: burlywood;
+}
+
+[popovertarget=toc]:hover,
+[popovertarget=marked-verses]:hover,
+[popovertarget=font-options]:hover {
+   background-color: cornsilk;
+}
+
+/* IMAGES AND THEIR CONTAINERS */
+
+.small-img-container {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 15px;
+
+   img {
+      border: 1px solid black;
+   }
+}
+
+.big-img-container {
+   display: grid;
+   justify-items: center;
+   gap: 10px;
+
+   img {
+      width: 240px;
+      height: 240px;
+   }
+}
+
+.qr-code-str {
+   border: 1px solid black;
+   padding: 6px;
+}
+
+/* TABLES OF CONTENT */
+
+ul {
+   margin-left: 26px;
+   padding-left: 4px;
+}
+
+ul:has(ul) {
+   border-left: 1px inset;
+}
+
+li:has(ul) {
+   list-style-type: disclosure-open;
+}
+
+/* VARIOUS COMPONENTS */
+
+#markdown-toc {
+   margin: 0;
+   list-style-type: none;
+}
+
+#font-options {
+
+   label {
+      display: grid;
+      gap: 5px;
+   }
+
+   label:first-child {
+      padding-bottom: 10px;
+   }
+}
+
+#font-size-select,
+#font-family-select {
+   padding: 5px;
+   font-size: 16px;
+   width: fit-content;
+   justify-self: center;
+}
+
+/* CATECHISM STYLES */
+
+.creed-comparison-table {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(8, auto);
+   grid-auto-flow: column;
+   column-gap: 10px;
+}
+
+.commandments-table {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: repeat(12, auto);
+   grid-auto-flow: column;
+   column-gap: 10px;
+}
+
+/* COLOR PICKER COMPONENT */
+
+#color-picker {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 10px;
+}
+
+.color-pick {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 1px solid black;
+}
+
+#reset-picker {
+   padding: 0;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   background-color: #fdfdfd;
+   fill: red;
+}
+
+#reset-picker:hover {
+   background-color: cornsilk;
+}
+
+#reset-picker:active {
+   background-color: bisque;
+}
+
+#close-btn {
+   background-color: aliceblue;
+   fill: forestgreen;
+}
+
+#close-btn:hover {
+   background-color: cornsilk;
+}
+
+#close-btn:active {
+   background-color: bisque;
+}
+
+[data-color=paleturquoise] {
+   background-color: paleturquoise;
+}
+
+[data-color=palegreen] {
+   background-color: palegreen;
+}
+
+[data-color=pink] {
+   background-color: pink;
+}
+
+[data-color=khaki] {
+   background-color: khaki;
+}
+
+.visible_toc_entry {
+   background-color: khaki;
+}
+
+.outlined {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
+.grid-container {
+   padding: 10px;
+   display: grid;
+   gap: 10px;
+}
+
+#annotation {
+   padding: 6px;
+}
+
+.button-container {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+label:has(input:checked) {
+   outline: 2px solid darkviolet;
+}

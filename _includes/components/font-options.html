@@ -1,0 +1,22 @@
+<div id="font-options" popover>
+   <label>
+      <span>{{ site.data.ui_translations[page.lang].font_size_prompt }}</span>
+      <select id="font-size-select">
+         <option value="100%">100%</option>
+         <option value="105%">105%</option>
+         <option value="110%">110%</option>
+         <option value="115%">115%</option>
+         <option value="120%">120%</option>
+      </select>
+   </label>
+   <label>
+      <span>{{ site.data.ui_translations[page.lang].font_family_prompt }}</span>
+      <select id="font-family-select">
+         <option value="sans-serif">sans-serif</option>
+         <option value="serif">serif</option>
+         <option value="system-ui">sistema</option>
+      </select>
+   </label>
+</div>
+
+<script type="module" src="{{ '/assets/js/font.js' | relative_url }}"></script>

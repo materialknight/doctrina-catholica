@@ -1,0 +1,11 @@
+<div id="toc" markdown="1" popover>
+
+   {{ site.data.ui_translations[page.lang].catalog_link }}
+   {:.center-aligned}
+   <header class="center-aligned">{{ page.title }}</header>
+
+   - Tabla de contenido
+   {:toc}
+</div>
+
+<script type="module" src="{{ '/assets/js/toc.js' | relative_url }}"></script>

@@ -1,0 +1,15 @@
+eo:
+  font_size_prompt: "Grandeco de la tiparo"
+  font_family_prompt: "Tiparo"
+  catalog_link: "[Katalogo](/doctrina-catholica/eo)"
+  catechism_toc_heading: "Kateĥismo de la Katolika Eklezio"
+es:
+  font_size_prompt: "Tamaño de letra"
+  font_family_prompt: "Tipo de letra"
+  catalog_link: "[Catálogo](/doctrina-catholica/)"
+  catechism_toc_heading: "Catecismo de la Iglesia Católica"
+en:
+  font_size_prompt: "Font size"
+  font_family_prompt: "Font family"
+  catalog_link: "[Catalog](/doctrina-catholica/en)"
+  catechism_toc_heading: "Catechism of the Catholic Church"
