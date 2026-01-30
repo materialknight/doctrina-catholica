@@ -27,7 +27,7 @@ En Brave para móvil está en:
 
 ## Sobre nuestra labor
 
-Nuestra labor consiste en adaptar obras de doctrina católica a un formato digital fácil leer, navegar y referenciar, de manera que también estén conectadas entre sí. Por ejemplo, cuando nuestra versión digital del [Catecismo]({{ "es/catechismus/" | relative_url }}) cita la [Didajé]({{ "es/didache/" | relative_url }}) o la [Epístola a Diogneto]({{ "es/epistula-ad-diognetum/" | relative_url }}), la referencia en el Catecismo es un enlace al pasaje correspondiente de esas obras. Nuestro fin es conectar de esa manera el Catecismo a todas sus fuentes. Si quisieras ayudarnos en esta gran tarea editorial, puedes hacerlo de 3 maneras:
+Nuestra labor consiste en adaptar obras de doctrina católica a un formato digital fácil de leer, navegar y referenciar, de manera que también estén conectadas entre sí. Por ejemplo, cuando nuestra versión digital del [Catecismo]({{ "es/catechismus/" | relative_url }}) cita la [Didajé]({{ "es/didache/" | relative_url }}) o la [Epístola a Diogneto]({{ "es/epistula-ad-diognetum/" | relative_url }}), la referencia en el Catecismo es un enlace al pasaje correspondiente de esas obras. Nuestro fin es conectar de esa manera el Catecismo a todas sus fuentes. Si quisieras ayudarnos en esta gran tarea editorial, puedes hacerlo de 3 maneras:
 
 1. Con tus oraciones.
 2. Reportando cualquier error en el contenido o en el funcionamiento del sitio; en el pie de página está el perfil de GitHub con el repositorio de este sitio; ahí puedes enviarnos tu reporte o corrección.

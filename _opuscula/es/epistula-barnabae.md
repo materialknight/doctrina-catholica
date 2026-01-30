@@ -1,5 +1,6 @@
 ---
 title: Epístola de Bernabé
+published: false
 ---
 
 {% include components/toc-auto.html %}
